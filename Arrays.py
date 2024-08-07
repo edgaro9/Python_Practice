@@ -112,7 +112,7 @@ class Arr:
         #using a dictionary instead of List to store the index and value 
         self.data = {} 
         
-    def _str_(self):
+    def output(self):
         print(self.data.values())
         return str(self._dict_)
     def get(self,index):
