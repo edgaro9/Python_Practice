@@ -93,3 +93,27 @@ def count_ones(array):
 array1 =[1,2,3,4,4]
 print(brute_force(array1))
 print(count_ones(array1))
+
+print ("-----------------------")
+l = [5,8,2,9,17,43,25,10]
+print(len)
+l.insert(9, "shushrut")
+len = len(l)
+print(len)
+
+
+############################################################################
+
+#Building a class array to understand the built in Array in Python 
+
+class Arr:
+    def _init_(self):
+        self.length = 0;
+        #using a dictionary instead of List to store the index and value 
+        self.data = {} 
+        
+    def _str_(self):
+        print(self.data.values())
+        return str(self._dict_)
+    def get(self,index):
+        return self.data[index]
