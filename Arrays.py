@@ -117,3 +117,20 @@ class Arr:
         return str(self._dict_)
     def get(self,index):
         return self.data[index]
+    def push(self,item):
+        self.length += 1
+        self.data[self.length - 1]
+        
+    def pop(self,item):
+        last_item = self.data[self.length-1]
+        del self.data[self.length - 1]
+        self.length -= 1
+        return last_item
+    
+    def insert(self,index,item):
+        self.length +=1
+        for i in range (self.length-1,index,-1):
+            self.data[i] += self.data[i-1]
+        self.data[index] = item
+        
+        
