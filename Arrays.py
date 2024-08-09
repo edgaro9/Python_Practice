@@ -133,4 +133,8 @@ class Arr:
             self.data[i] += self.data[i-1]
         self.data[index] = item
         
+num2 = [1,2,3,4,5]
+print('------------------------')
+for _, i in enumerate(num2):
+    print (i)
         
